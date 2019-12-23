@@ -6,7 +6,7 @@ const Home = () => (
 	<>
 		<Header as="h1" textAlign="center">Fake Space</Header>
 		<Divider/>
-		<Header as="h3">My Posts</Header>
+		<Header as="h2">My Posts</Header>
 		<Divider hidden />
 		<Posts/>
 	</>

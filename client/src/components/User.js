@@ -6,7 +6,6 @@ import axios from 'axios';
 const User = (props) => {
 	const {user} = useContext(AuthContext);
 	const [onUser, setUser] = useState({});
-	const [clicked, setClicked] = useState(false);
 	useEffect(() => {
 		let unmount = false;
 		if(!unmount) {

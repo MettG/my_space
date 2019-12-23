@@ -33,13 +33,13 @@ const App = () => {
 				<Container>
 					<Switch>
 						<ProtectedRoute exact path="/" component={Home} />
-						<Route 
+						<ProtectedRoute 
 							exact path='/users' 
 							render={
 								(props)=> <Users {...props} updateFriend={updateFriend}/>
 							}
 							/>
-						<Route exact path="/friends"
+						<ProtectedRoute exact path="/friends"
 							render={
 								(props)=> <Friends {...props} updateFriend={updateFriend}/>
 							}
